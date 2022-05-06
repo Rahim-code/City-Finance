@@ -1,4 +1,4 @@
-.card-title{
+.montserrat{
     position: static;
     width: 135px;
     height: 36px;
@@ -11,40 +11,9 @@
     line-height: 150%;
     color:#424242
 }
-.card-text{
+._card-text{
     color:#616161;
     
     
 }
-.icon1{
-    background: #CEFBFF;
-    border-radius: 20px;
-    width: 35px;
-    height: 35px;
-    left: 7px;
-    right: 7px;
-    top: 2px;
-    bottom: 8.5px;
-    
-}
-.icon2{
-    border-radius: 20px;
-    width: 35px;
-    height: 35px;
-    background: rgba(242, 153, 74, 0.2);
-    left: 7px;
-    right: 7px;
-    top: 2px;
-    bottom: 8.5px;
-}
-.icon3{
-    background: rgba(0, 180, 18, 0.2);
-    border-radius: 20px;
-    width: 35px;
-    height: 35px;
-    left: 7px;
-    right: 7px;
-    top: 2px;
-    bottom: 8.5px;
 
-}
