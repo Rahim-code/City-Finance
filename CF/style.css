@@ -13,7 +13,19 @@
 }
 ._card-text{
     color:#616161;
+}
     
+._campaigns{
+    color:#424242;
+    font-family: 'Montserrat';
+    font-weight: 700 !important;
     
+
+}
+._all{
+    color:#00A5B4 !important
+}
+._time{
+   font-size: smaller;
 }
 
