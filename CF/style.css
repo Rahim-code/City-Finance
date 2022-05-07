@@ -48,3 +48,8 @@
 .grey{
     color:#BDBDBD
 }
+
+.c_card:hover{
+    box-shadow: black  0 4px 8px 0;
+    transition: 3ms;
+}
