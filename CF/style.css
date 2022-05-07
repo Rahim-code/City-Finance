@@ -28,4 +28,20 @@
 ._time{
    font-size: smaller;
 }
-
+.calc-bg{
+    background-color: #F0FFFC;
+    
+}
+.pay{
+    color: #616161;
+}
+.amount{
+    color: #424242;
+}
+.mil{
+    color: #616161;
+    font-size: 14px;
+}
+.azn{
+    font-size: 24px;
+}
