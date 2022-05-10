@@ -13,17 +13,20 @@
 }
 ._card-text{
     color:#616161;
+    
 }
     
 ._campaigns{
     color:#424242;
     font-family: 'Montserrat';
-    font-weight: 700 !important;
-    
+    font-weight: 700  !important;
+    font-style: normal !important;
 
 }
 ._all{
-    color:#00A5B4 !important
+    color:#00A5B4 !important;
+   
+    
 }
 ._time{
    font-size: smaller;
@@ -49,7 +52,50 @@
     color:#BDBDBD
 }
 
-.c_card:hover{
-    box-shadow: black  0 4px 8px 0;
+/* .c_card:hover{
+    box-shadow: rgba(0, 0, 0, 0.695)  0 4px 8px 0;
     transition: 3ms;
+} */
+._btn{
+    color: white !important;
+    background: #00A5B4 !important;
+    border-radius: 8px !important;
 }
+._txt{
+font-weight: 400;
+font-size: 12px;
+color:#616161 !important
+}
+/* ._pc{
+height: 320px !important;
+
+} */
+
+
+@media (min-width: 768px) { 
+    .ctext{
+        width: 50%;
+    }
+    /* .cimg{
+        height: 200px;
+    } */
+    .dext{
+        width: 75%;
+    }
+ }
+
+ @media (min-width: 992px) { 
+     ._mb{
+         margin-bottom: 120px;
+     }
+     .dtext{
+        width: 50%;
+    }
+  }
+  
+
+
+
+
+
+
