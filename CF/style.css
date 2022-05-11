@@ -52,7 +52,7 @@
     color:#BDBDBD
 }
 
-/* .c_card:hover{
+/* .c_card{
     box-shadow: rgba(0, 0, 0, 0.695)  0 4px 8px 0;
     transition: 3ms;
 } */
@@ -82,6 +82,12 @@ height: 320px !important;
     .dext{
         width: 75%;
     }
+    .btt{
+        width: 83px!important;
+    }
+    .imglogo{
+        width: 78% !important;
+    }
  }
 
  @media (min-width: 992px) { 
@@ -91,8 +97,19 @@ height: 320px !important;
      .dtext{
         width: 50%;
     }
+    .btt{
+        width: 180px!important;
+    }
+
+   
   }
-  
+  @media (max-width: 575.98px) { 
+      .btt{
+          width: 100% !important;
+          margin-top: 10px;
+      }
+   }
+
 
 
 
