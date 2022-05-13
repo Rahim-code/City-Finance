@@ -16,8 +16,72 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <title>Document</title> 
+  <!-- <style>
+    
+      .styled_range {
+    position: relative;
+    padding: 10px;
+  }
+
+  input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+
+  input[type=range]:focus {
+    outline: none;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 9px;
+  }
+
+  .track_range {
+    pointer-events: none;
+  }
+
+  .track_range::-webkit-slider-runnable-track {
+    background: #E6F6F3;
+    border-radius: 3px;
+    overflow: hidden;
+  }  
+
+  .track_range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: transparent;
+    height: 1px;
+    width: 1px;
+    box-shadow: -600px 0 0 600px #00A5B4;
+  }
+
+  .thumb_range::-webkit-slider-runnable-track {
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .thumb_range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    height: 25px;
+    width: 25px;
+    background: #00A5B4;
+    cursor: pointer;
+    margin: -9px 0px 0px 0px;
+  }
+  </style> -->
 </head>
 <body>
+  
   <!-- Benefits start -->
   <section>
     <div class="my-5 container">
@@ -114,14 +178,36 @@
         <div class="px-5 py-5" style="background-color: #FFFFFF">
         <h6 class="_txt">Məbləğ</h6>
         <p class="amount">14.500.000 ₼</p>
-        <input class="range"  type="range" min="0" max="110" value="7" step="1" orient="vertical" style="width:100%">
+        <!-- <input class="range"  type="range" min="0" max="110" value="7" step="1" orient="vertical" style="width:100%"> -->
+        <form class="">
+          <div class="styled_range">
+            <input type="range" class="track_range"/>
+            <input type="range" class="thumb_range"/>
+          </div>
+          <br/>
+          <!-- <div class="styled_range">
+            <input type="range" class="track_range"/>
+            <input type="range" class="thumb_range"/>
+          </div> -->
+          </form>
         <div class=" d-flex justify-content-between">
           <p style="margin-top: -10px;" class="mil">1.000.000 ₼</p>
           <p  style="margin-top: -10px;"class="mil">20.000.000 ₼</p>
         </div>
         <h6 class="_txt mt-2">Müddət (il)</h6>
         <p class="amount">1 il</p>
-        <input type="range" min="0" max="110" value="7" step="1" orient="vertical" style="width:100%">
+        <!-- <input type="range" min="0" max="110" value="7" step="1" orient="vertical" style="width:100%"> -->
+        <form class="">
+          <div class="styled_range">
+            <input type="range" class="track_range"/>
+            <input type="range" class="thumb_range"/>
+          </div>
+          <br/>
+          <!-- <div class="styled_range">
+            <input type="range" class="track_range"/>
+            <input type="range" class="thumb_range"/>
+          </div> -->
+          </form>
         <div class=" d-flex justify-content-between">
           <p style="margin-top: -10px;" class="mil">1 il</p>
           <p  style="margin-top: -10px;"class="mil">3 il</p>
@@ -216,5 +302,29 @@
     </div>
   </div>
 </footer>
+
+<script>
+
+  window.onload = function() {
+    var styledRanges = document.getElementsByClassName('styled_range');
+    for (var i=0; i<styledRanges.length; i++) {
+      var thumbRange = null, trackRange = null;
+      for (var j=0; j<styledRanges[i].children.length; j++) {
+        var child = styledRanges[i].children[j];
+        if (child.className === 'thumb_range')
+          var thumbRange = child;
+        else if (child.className === 'track_range')
+          var trackRange = child;
+      }
+      thumbRange.oninput = function(thumbRange, trackRange) {
+        return function(e) {
+          trackRange.value = thumbRange.value;
+        };
+      }(thumbRange, trackRange);
+    }
+  }
+
+
+  </script>
 </body>
 </html>
