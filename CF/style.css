@@ -169,3 +169,28 @@ input[type=range]::-webkit-slider-runnable-track {
   cursor: pointer;
   margin: -9px 0px 0px 0px;
 }
+@media (max-width: 576px) { 
+  .textsm{
+    text-align: center !important;
+   
+  }
+ .center{
+   padding-left: 113px !important;
+ }
+ .imglogo{
+   padding-left: 70px !important;
+ }
+ .textpl{
+  padding-left: 60px !important;
+  padding-bottom: 5px !important;
+ }
+ }
+
+ @media (max-width: 576px) { 
+.bicon{
+  padding-left: 130px !important;
+}
+.Iconpl{
+  padding-left: 85px !important;
+}
+ }
